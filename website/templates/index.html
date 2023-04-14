@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+{% if username == 'kazuki' %}
+<p>自分です</p>
+{% elif username %}
+<p>{{ username }}さんです。</p>
+{% else %}
+<p>匿名さん、ようこそ。</p>
+{% endif %}
+    <h1>ホーム</h1>
+{% endblock %}
